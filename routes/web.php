@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/driver', [\App\Http\Controllers\DriverController::class, 'index']);
+Route::get('/transport', [\App\Http\Controllers\TransportController::class, 'index']);
+Route::get('/relation', [\App\Http\Controllers\RelationDrTrController::class, 'index']);
+
+
+
