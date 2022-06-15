@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main_page');
 });
 Route::get('/driver', [\App\Http\Controllers\DriverController::class, 'index']);
 Route::get('/transport', [\App\Http\Controllers\TransportController::class, 'index']);

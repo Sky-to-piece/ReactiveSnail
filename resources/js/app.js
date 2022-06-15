@@ -21,10 +21,11 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('driver', require('./components/Driver.vue').default);
-Vue.component('up_header', require('./components/Header.vue').default);
-Vue.component('transport', require('./components/Transport.vue').default);
-Vue.component('relation', require('./components/Relations.vue').default);
+Vue.component('driver',     require('./components/Driver.vue').default);
+Vue.component('up_header',  require('./components/Header.vue').default);
+Vue.component('transport',  require('./components/Transport.vue').default);
+Vue.component('relation',   require('./components/Relations.vue').default);
+Vue.component('main_page',  require('./components/MainPage.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -33,14 +34,8 @@ Vue.component('relation', require('./components/Relations.vue').default);
  */
 
 //styles
-//import "/assets/css/default.css";
-//import "/assets/css/default-rtl.css";
+import "/assets/css/global.css";
 
-import boo from 'bootstrap';
-
-//js
-//import "/assets/js/default.js";
-//import "/assets/js/default-icons.js";
 
 const app = new Vue({
     el: '#app',

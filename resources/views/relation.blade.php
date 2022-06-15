@@ -9,6 +9,7 @@
 </head>
 <body>
 <div id="app">
+
     <up_header></up_header>
     <relation></relation>
 </div>

@@ -1,15 +1,15 @@
 <template>
     <div>
-        <div>Driver</div>
+        <div>Main Page</div>
         <div>
-            I'm Driver
+            have you registered?
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Driver.vue"
+    name: "MainPage.vue"
 }
 </script>
 
