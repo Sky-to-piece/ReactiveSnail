@@ -4,6 +4,8 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+import Vue from "vue";
+
 require('./bootstrap');
 
 window.Vue = require('vue').default;
@@ -20,12 +22,25 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('driver', require('./components/Driver.vue').default);
+Vue.component('up_header', require('./components/Header.vue').default);
+Vue.component('transport', require('./components/Transport.vue').default);
+Vue.component('relation', require('./components/Relations.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+
+//styles
+//import "/assets/css/default.css";
+//import "/assets/css/default-rtl.css";
+
+import boo from 'bootstrap';
+
+//js
+//import "/assets/js/default.js";
+//import "/assets/js/default-icons.js";
 
 const app = new Vue({
     el: '#app',

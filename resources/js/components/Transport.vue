@@ -3,10 +3,10 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Driver</div>
+                    <div class="card-header">Transport</div>
 
                     <div class="card-body">
-                        I'm an Driver
+                        I'm DrDr machine
                     </div>
                 </div>
             </div>
@@ -16,9 +16,7 @@
 
 <script>
 export default {
-    mounted() {
-        console.log('Component mounted.')
-    }
+    name: "Transport.vue"
 }
 </script>
 

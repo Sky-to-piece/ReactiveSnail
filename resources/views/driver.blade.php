@@ -9,6 +9,7 @@
 </head>
 <body>
 <div id="app">
+    <up_header></up_header>
     <driver></driver>
 </div>
 <script src="./js/app.js"></script>
