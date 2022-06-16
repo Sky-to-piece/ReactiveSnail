@@ -23,6 +23,8 @@ return new class extends Migration
             $table->date('driving_experience');
             $table->string('photo')->default('/photo/ava_default.png');
             $table->timestamps();
+
+            $table->softDeletes();
         });
         /*
          CREATE TABLE DRIVER(
